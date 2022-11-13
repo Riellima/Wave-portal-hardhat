@@ -6,7 +6,6 @@ const main = async() => {
     const waveContract = await waveContractFactory.deploy();
     await waveContract.deployed();
 
-    console.log("Contract deployed on: ", waveContract.provider.connection.url)
     console.log("Contract deployed to: ", waveContract.address);
     console.log("Contract deployed by account:" , deployer.address);
     console.log("Account balance: ", accountBalance);
